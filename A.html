@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title> html-css</title>
+        <style>
+            *{
+                margin: 0px;
+            }
+            header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color:gray;
+                color: white;
+                padding: 10px 20px;
+                font-family: Arial,sans-serif;
+                flex-wrap: wrap;
+            }
+            header img{
+                width:130px;
+                height: 130px;
+                border-radius: 10%;
+                float: left;
+            }
+            header h1{
+                flex:1;
+                text-align: center;
+                font-size: 35px;
+                margin: 0;
+            }
+
+            .rightside{
+                display: flex;
+                flex-direction: row;
+                gap:10px;
+                align-items: flex-end;
+                float: right;
+            }
+            .link{
+                display: flex;
+                gap:10px;
+                flex-wrap: wrap;
+            }
+            .link a{
+                color:whitesmoke;
+                text-decoration: none;
+                font-size: 14px;
+                padding: 5px 10px;
+                border-radius: 4px;
+            }
+
+            .link a:hover{
+                background-color: black;
+            }
+            .search-box{
+                display: flex;
+                align-items: center;
+                gap:5px;
+            }
+            .search-box input{
+                padding: 5px;
+                border: none;
+                border-radius: 4px; 
+            }
+            .search-box input:hover{
+                background-color:lightpink;
+            }
+            .search-box button{
+                padding: 4px 4px;
+                border: none;
+                border-radius: 4px;
+                background-color: black;
+                color: white;
+                cursor:pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="z.png">
+            <h1>Indian-Food</h1>
+            <div class="rightside">
+            <div class="link">
+                <a href="q">Home</a>
+                <a href="q">About us</a>
+                <a href="q">Menu</a>
+                <a href="q">Track order</a>
+                <a href="q">Offers</a>
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search food items">
+                <button>search</button>
+
+            </div>
+            </div>
+
+        </header>
+    </body>
+</html>

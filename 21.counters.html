@@ -1,0 +1,70 @@
+<!-- <html>
+    <head>
+        <title>counters</title>
+        <style>
+           body{
+            counter-reset :section;
+           }
+           h2::before{
+            counter-increment: section;
+            content: "section" counter(section)":";
+           }
+        </style>
+    </head>
+    <body>
+        <h1>My Tutorial</h1> 
+        <h2>html</h2>
+       <h2>pyton</h2>
+       <h2>css</h2>
+       <h2>Sql</h2>
+       <h2>javascript</h2>
+
+
+    </body>
+</html> -->
+
+<html>
+    <head>
+        <title>counters</title>
+        <style>
+           body{
+            counter-reset :section;
+           }
+           h1{
+            counter-reset:subsection;
+           }
+           h1::before{
+            counter-increment: section;
+            content:"section" counter(section) ".";
+           }
+           h3::before{
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection)" ";
+           }
+        </style>
+    </head>
+    <body>
+        <h1>-Starters-</h1>
+        <h3>chiken 65</h3>
+        <h3>chiken lollipop</h3>
+        <h3>paneer tikka</h3>
+        <h3>pepper chiken</h3>
+        <h3>prawn fry</h3>
+
+
+        <h1>Veg itens</h1>
+        <h3>tomato palav</h3>
+        <h3>coconut rice</h3>
+        <h3>sambar rice</h3>
+        <h3>curd rice</h3>
+        <h3>paneer friedrice</h3>
+
+
+        <h1>Nonveg items</h1>
+        <h3>mutton palav</h3>
+        <h3>egg palav</h3>
+        <h3>chien biriyani</h3>
+        <h3>fish curry</h3>
+
+    </body>
+</html>
